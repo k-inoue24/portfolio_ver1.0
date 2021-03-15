@@ -39,17 +39,17 @@
                 <span></span>
                 <span></span>
             </div>
+			   	<nav class="menu">
+					<ul id="modal_menu">
+						<li><a href="#about">About</a></li>
+						<li><a href="#service">Service</a></li>
+						<li><a href="#works">Works</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="#links">Links</a></li>
+					</ul>
+		    </nav>
         </div>
     </header>
-    <nav class="menu">
-        <ul id="modal_menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#links">Links</a></li>
-        </ul>
-    </nav>
     <div class="header_behind">
     </div>
     <div class="top">
@@ -510,18 +510,6 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.typist.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
     <script>
-      // KV切替
-      $(function(){
-          $('.top').bgSwitcher({
-              images: ['<?php echo get_template_directory_uri(); ?>/img/top-image1.jpg', '<?php echo get_template_directory_uri(); ?>/img/top-image2.jpg', '<?php echo get_template_directory_uri(); ?>/img/top-image1.jpg', '<?php echo get_template_directory_uri(); ?>/img/top-image3.jpg'],
-              interval: 4900,
-              loop: true,
-              shuffle: false,
-              effect: "fade",
-              duration: 2000,
-              easing: "linear"
-          });
-      });
       // フォーム送信→完了画面遷移
       document.addEventListener('wpcf7mailsent', function(event) {
         location = 'https://inouekeita.work/thanks-page';
