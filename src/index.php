@@ -56,7 +56,7 @@
         <div class="top_wrapper">
             <div class="container">
                 <p class="top_name"></p>
-                <p class="introduction">Welcome to my portfolio.<br>I'm a Web Engineer.</p>
+                <p class="introduction">Web Engineer / Freelance / Traveler<br>"Always be creative"</p>
                 <a class="top_contact" href="#contact">CONTACT</a>
             </div>
         </div>
