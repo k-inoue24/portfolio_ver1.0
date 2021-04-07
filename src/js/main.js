@@ -33,19 +33,6 @@ $('.menu').on('click',function() {
   $('body').removeClass('open');
 });
 
-// KV切替
-$(function(){
-  $('.top').bgSwitcher({
-    images: ['https://inouekeita.work/wp-content/themes/inouekeita_portfolio_ver3.0/img/top-image1.jpg', 'https://inouekeita.work/wp-content/themes/inouekeita_portfolio_ver3.0/img/top-image2.jpg', 'https://inouekeita.work/wp-content/themes/inouekeita_portfolio_ver3.0/img/top-image1.jpg', 'https://inouekeita.work/wp-content/themes/inouekeita_portfolio_ver3.0/img/top-image3.jpg'],
-    interval: 4900,
-    loop: true,
-    shuffle: false,
-    effect: "fade",
-    duration: 2000,
-    easing: "linear"
-  });
-});
-
 // ABOUT:MODE切替
 $('.horizontal a').on('click',function(){
   $('.horizontal a').removeClass('active');

@@ -402,8 +402,15 @@ header .header_right nav li a:hover::after {
   height: 580px!important;
 }
 
+.header_behind + div div{
+  height: 580px!important;
+}
+
 @media (max-width: 991px) {
     .header_behind + div {
+      height: 550px!important;
+    }
+    .header_behind + div div {
       height: 550px!important;
     }
 
@@ -444,7 +451,9 @@ header .header_right nav li a:hover::after {
     .header_behind + div {
       height: 520px!important;
     }
-
+    .header_behind + div div{
+      height: 520px!important;
+    }
 }
 
 @media (max-width: 600px) {
@@ -471,6 +480,9 @@ header .header_right nav li a:hover::after {
     .header_behind + div {
       height: 350px!important;
     }
+    .header_behind + div div {
+      height: 350px!important;
+    }
     .toggle {
         display: block;
     }
@@ -478,7 +490,10 @@ header .header_right nav li a:hover::after {
 
 @media (max-width: 480px) {
   .header_behind + div {
-      height: 330px;
+      height: 330px!important;
+  }
+  .header_behind + div div {
+      height: 330px!important;
   }
 }
 
