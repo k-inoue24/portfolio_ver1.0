@@ -43,15 +43,15 @@ $('.modeSwitch a').on('click',function(){
 
 // ABOUT:MODE切替時の表示位置調整
 var position = $('#about').offset().top - $('header').height();
-$("#work_btn,#life_btn").click(function() {
+$("#workBtn,#lifeBtn").click(function() {
   $("html,body").animate({
     scrollTop: position
   });
 });
 
 // SERVICE:費用リスト開閉
-$('#price_button').on('click',function(){
-  $('#price').slideToggle();
+$('#priceBtn').on('click',function(){
+  $('.priceDetail').slideToggle(300);
 })
 
 // WORKS:スライダー処理

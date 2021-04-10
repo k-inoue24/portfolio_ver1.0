@@ -580,11 +580,8 @@ header {
 
 @media (max-width: 767px) {
 	.brandingContent {
-		min-height: auto;
-		height: 520px;
 		margin-top: 66px;
 		&:before {
-			height: inherit;
 			margin-top: 66px;
 		}
 	}
@@ -592,7 +589,6 @@ header {
 
 @media (max-width: 600px) {
 	.brandingContent {
-		height: 350px;
 		.brandingWrapper {
 			.brandingName {
 				font-size: 8.0rem;
@@ -615,7 +611,6 @@ header {
 	.brandingContent {
 		background-color: rgba(0, 0, 0, 0.2);
 		background-position: center;
-		height: 330px;
 		.brandingWrapper {
 			.brandingName {
 				font-size: 7.4rem;
@@ -835,6 +830,9 @@ header {
 					font-weight: bold;
 					padding-bottom: 1px;
 					padding: 0 10px;
+					.brSlash {
+						display: none;
+					}
 				}
 				.titleBorder {
 					background: #853030;
@@ -854,7 +852,7 @@ header {
 		display: flex;
 		justify-content: center;
 		width: 100%;
-		margin-top: 130px;
+		margin-top: 110px;
 		span {
 			display: inline-block;
 			width: 11px;
@@ -866,290 +864,280 @@ header {
 			}
 		}
 	}
-}
-
-
-
-
-
-
-
-
-#service .price {
-    text-align: center;
-    font-weight: bold;
-    margin-top: 100px;
-}
-
-#service .price #price_button {
-    font-size: 1.2rem;
-    font-weight: normal;
-    color: #fff;
-    background: #444;
-    padding: 10px 14px;
-    border-radius: 6px;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    cursor: pointer;
-}
-
-#service .price #price_button:hover {
-    color: #333;
-    background: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#service .prices {
-    display: none;
-    overflow: hidden;
-}
-
-#service .prices .table_container {
-    margin-top: 80px;
-}
-
-#service .prices .table_container th,
-#service .prices .table_container td {
-    text-align: left;
-    color: #444;
-    font-size: 1.6rem;
-    font-weight: bold;
-    padding: 6px 0;
-}
-
-#service .prices .table_container th {
-    padding-right: 20px;
-}
-
-#service .prices .table_container th i {
-    color: rgba(140, 50, 52, 0.9);
-    font-size: 1.8rem;
-}
-
-#service .prices .price_list_sp {
-    display: none;
-}
-
-#service .prices a {
-    text-decoration: underline;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-#service .prices a:hover {
-    font-weight: bold;
-    color: rgba(140, 50, 52, 0.9);
-}
-
-#service .prices .example_text {
-    text-align: center;
-    margin-top: 48px;
-}
-
-#service .prices p {
-    text-align: center;
-}
-
-#service .prices br {
-    display: none;
-}
-
-#service .br_slash {
-    display: none;
+	.priceContent {
+		#priceBtn {
+			width: 200px;
+			display: block;
+			text-align: center;
+			font-size: 1.2rem;
+			font-weight: normal;
+			color: #fff;
+			background: #444;
+			padding: 5px 10px;
+			border-radius: 6px;
+			-webkit-transition: all 0.3s;
+			transition: all 0.3s;
+			cursor: pointer;
+			margin: 50px auto 0;
+			&:hover {
+				color: #333;
+				background: #fff;
+				text-decoration: none;
+				font-weight: bold;
+			}
+		}
+		.priceDetail {
+			display: none;
+			overflow: hidden;
+			.priceTable {
+				width: 500px;
+				margin: 30px auto 0;
+				th,td {
+					text-align: left;
+					color: #444;
+					font-size: 1.6rem;
+					font-weight: bold;
+					padding: 6px 0;
+				}
+				th {
+					padding-right: 20px;
+					i {
+						color: rgba(140, 50, 52, 0.9);
+						font-size: 1.8rem;
+					}
+				}
+			}
+			.priceListSp {
+				display: none;
+			}
+			.textWrap {
+				margin-top: 30px;
+				p {
+					text-align: center;
+					br {
+						display: none;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 991px) {
-    #service {
-        line-height: 1.7;
-    }
-    #service .serviceContent .imgWrap img {
-        display: block;
-        width: 300px;
-        margin: 0 auto;
-    }
-    #service .serviceContent .textWrap .textInner h3 {
-        font-size: 1.8rem;
-    }
-    #service .serviceContent .textWrap .textInner h3:first-of-type {
-        padding: 0;
-    }
+	#service {
+		line-height: 1.7;
+		.serviceContent {
+			.imgWrap {
+				img {
+					display: block;
+					width: 300px;
+					margin: 0 auto;
+				}
+			}
+			.textWrap {
+				.textInner {
+					.serviceTitle {
+						font-size: 1.8rem;
+						&:first-of-type {
+							padding: 0;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 767px) {
-    #service .serviceContent {
-        display: block;
-        margin: 70px 0;
-    }
-    #service .serviceContent .imgWrap {
-        width: 100%;
-    }
-    #service .serviceContent .imgWrap img {
-        width: 40%;
-    }
-    #service .serviceContent .imgWrap .smartphone {
-        width: 20%;
-    }
-    #service .serviceContent .imgWrap .domain {
-        padding: 20px 0;
-    }
-    #service .serviceContent .imgWrap .smartphone {
-        width: 20%;
-    }
-    #service .serviceContent .textWrap {
-        width: 60%;
-        margin: 30px auto;
-        position: static;
-    }
-    #service .serviceContent .textWrap .textInner {
-        position: static;
-        top: none;
-        -webkit-transform: none;
-        -ms-transform: none;
-        transform: none;
-    }
-    #service .serviceContent .textWrap .textInner h3 {
-        font-size: 1.7rem;
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-    }
-    #service .serviceContent .textWrap .textInner p {
-        font-size: 1.4rem;
-        line-height: 1.8;
-    }
-    #service .circleLine {
-        margin-top: 0;
-    }
-    #service .circleLine div {
-        width: 9px;
-        height: 9px;
-    }
-    #service .circleLine div:nth-of-type(2n) {
-        margin: 0 40px;
-    }
-    #service .price {
-        margin-top: 60px;
-    }
-    #service .prices .table_container th,
-    #service .prices .table_container td {
-        font-size: 1.5rem;
-    }
-    #service .prices .table_container th i {
-        color: rgba(140, 50, 52, 0.9);
-        font-size: 1.8rem;
-    }
+	#service {
+		.serviceContent {
+			display: block;
+			margin: 70px 0;
+			.imgWrap {
+				width: 100%;
+				img {
+					width: 40%;
+					&.smartphone {
+						width: 20%;
+					}
+				}
+			}
+			.textWrap {
+				width: 60%;
+				margin: 30px auto;
+				position: static;
+				.textInner {
+					position: static;
+					top: none;
+					-webkit-transform: none;
+					-ms-transform: none;
+					transform: none;
+					.serviceTitle {
+						font-size: 1.7rem;
+						display: block;
+						text-align: center;
+						margin: 0 auto;
+					}
+					p {
+						font-size: 1.4rem;
+						line-height: 1.8;
+					}
+				}
+			}
+		}
+		.circleLine {
+			margin-top: 0;
+			span {
+				width: 9px;
+				height: 9px;
+				&:nth-of-type(2n) {
+					margin: 0 40px;
+				}
+			}
+		}
+		.priceContent {
+			.priceDetail {
+				.priceTable {
+					width: 92%;
+					th,td {
+						font-size: 1.5rem;
+					}
+					th {
+						i {
+							color: rgba(140, 50, 52, 0.9);
+							font-size: 1.8rem;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 600px) {
-    #service {
-        padding: 40px 0;
-    }
-    #service .serviceContent .imgWrap img {
-        width: 50%;
-    }
-    #service .serviceContent .imgWrap .smartphone {
-        width: 24%;
-    }
-    #service .serviceContent .textWrap {
-        width: 80%;
-    }
-    #service .price {
-        font-size: 1.2rem;
-    }
-    #service .prices .table_container {
-        margin-top: 50px;
-    }
-    #service .prices .table_container th,
-    #service .prices .table_container td {
-        font-size: 1.4rem;
-    }
-    #service .prices .table_container th {
-        padding-right: 10px;
-    }
-    #service .prices .table_container th i {
-        color: rgba(140, 50, 52, 0.9);
-        font-size: 1.8rem;
-    }
-    #service .prices .example_text {
-        margin-bottom: 14px;
-    }
-    #service .prices br {
-        display: block !important;
-    }
+	#service {
+		.serviceContent {
+			.imgWrap {
+				img {
+					width: 50%;
+					&.smartphone {
+						width: 24%;
+					}
+				}
+			}
+			.textWrap {
+				width: 80%;
+			}
+		}
+		.priceContent {
+			.priceDetail {
+				margin-top: 50px;
+				.priceTable {
+					th,td {
+						font-size: 1.4rem;
+					}
+					th {
+						padding-right: 10px;
+						i {
+							color: rgba(140, 50, 52, 0.9);
+							font-size: 1.8rem;
+						}
+					}
+				}
+				.textWrap {
+					br {
+						display: block !important;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 480px) {
-    #service .serviceContent {
-        margin: 60px 0;
-    }
-    #service .serviceContent .imgWrap img {
-        width: 64%;
-    }
-    #service .serviceContent .imgWrap .smartphone {
-        width: 28%;
-    }
-    #service .serviceContent .textWrap {
-        width: 88%;
-    }
-    #service .serviceContent .textWrap .textInner h3 {
-        font-size: 1.5rem;
-    }
-    #service .serviceContent .textWrap .textInner p {
-        font-size: 1.3rem;
-        line-height: 1.8;
-    }
-    #service .circleLine div {
-        width: 6px;
-        height: 6px;
-        background: rgba(156, 50, 52, 0.6);
-    }
-    #service .circleLine div:nth-of-type(2n) {
-        margin: 0 34px;
-    }
-    #service .price {
-        margin-top: 60px;
-    }
-    #service .price #price_button {
-        font-size: 1.1rem;
-        padding: 8px 12px;
-    }
-    #service .prices .table_container {
-        display: none;
-    }
-    #service .prices .price_list_sp {
-        text-align: center;
-        display: block;
-        margin-top: 40px;
-    }
-    #service .prices .price_list_sp li {
-        color: #444;
-        font-size: 1.2rem;
-        font-weight: bold;
-        margin: 16px 0;
-    }
-    #service .prices .price_list_sp li i {
-        color: rgba(140, 50, 52, 0.9);
-    }
-    #service .prices .price_list_sp div {
-        width: 40%;
-        height: 1px;
-        background: rgba(140, 50, 52, 0.5);
-        border-radius: 40%;
-        margin: 0 auto;
-    }
-    #service .prices p {
-        font-size: 1.2rem;
-    }
+    #service {
+		.serviceContent {
+			margin: 60px 0;
+			.imgWrap {
+				img {
+					width: 64%;
+					&.smartphone {
+						width: 28%;
+					}
+				}
+			}
+			.textWrap {
+				width: 88%;
+				.textInner {
+					.serviceTitle {
+						font-size: 1.5rem;
+					}
+					p {
+						font-size: 1.3rem;
+						line-height: 1.8;
+					}
+				}
+			}
+		}
+		.circleLine {
+			span {
+				width: 6px;
+				height: 6px;
+				&:nth-of-type(2n) {
+					margin: 0 35px;
+				}
+			}
+		}
+		.priceContent {
+			#priceBtn {
+				font-size: 1.1rem;
+				padding: 8px 12px;
+			}
+			.priceDetail {
+				.priceTable {
+					display: none;
+				}
+				.priceListSp {
+					text-align: center;
+					display: block;
+					margin-top: 40px;
+					li {
+						color: #444;
+						font-size: 1.2rem;
+						font-weight: bold;
+						margin: 16px 0;
+						i {
+							color: rgba(140, 50, 52, 0.9);
+						}
+					}
+				}
+				.textWrap {
+					p {
+						font-size: 1.2rem;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 400px) {
-    #service .slash {
-        display: none;
-    }
-    #service .br_slash {
-        display: block;
-    }
+	#service {
+		.serviceContent {
+			.textWrap {
+				.textInner {
+					.serviceTitle {
+						.brSlash {
+							display: block;
+						}
+						.slash {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 
@@ -1204,7 +1192,7 @@ header {
     margin-top: 50px;
 }
 
-#works .flex {
+#works .workContent {
     height: 560px;
     display: flex;
     -o-display: flex;
@@ -1215,12 +1203,12 @@ header {
     padding: 40px 0;
 }
 
-#works .flex p {
+#works .workContent p {
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-#works .flex .works_version {
+#works .workContent .works_version {
     width: 70px;
     font-size: 1.4rem;
     background-color: rgba(130, 50, 52, 0.8);
@@ -1354,7 +1342,7 @@ header {
         height: 30px;
         margin-top: -100px;
     }
-    #works .swiper-container .swiper-slide .flex {
+    #works .swiper-container .swiper-slide .workContent {
         display: none;
     }
     #works .tabs {

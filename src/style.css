@@ -577,20 +577,14 @@ header nav ul li a:hover:after {
 
 @media (max-width: 767px) {
 		.brandingContent {
-				min-height: auto;
-				height: 520px;
 				margin-top: 66px;
 		}
 		.brandingContent:before {
-				height: inherit;
 				margin-top: 66px;
 		}
 }
 
 @media (max-width: 600px) {
-		.brandingContent {
-				height: 350px;
-		}
 		.brandingContent .brandingWrapper .brandingName {
 				font-size: 8.0rem;
 				margin: 0 auto 30px;
@@ -610,7 +604,6 @@ header nav ul li a:hover:after {
 		.brandingContent {
 				background-color: rgba(0, 0, 0, 0.2);
 				background-position: center;
-				height: 330px;
 		}
 		.brandingContent .brandingWrapper .brandingName {
 				font-size: 7.4rem;
@@ -824,6 +817,10 @@ header nav ul li a:hover:after {
 		padding: 0 10px;
 }
 
+#service .serviceContent .textWrap .textInner .serviceTitle .brSlash {
+		display: none;
+}
+
 #service .serviceContent .textWrap .textInner .titleBorder {
 		background: #853030;
 		display: block;
@@ -841,7 +838,7 @@ header nav ul li a:hover:after {
 		display: flex;
 		justify-content: center;
 		width: 100%;
-		margin-top: 130px;
+		margin-top: 110px;
 }
 
 #service .circleLine span {
@@ -856,42 +853,40 @@ header nav ul li a:hover:after {
 		margin: 0 60px;
 }
 
-#service .price {
+#service .priceContent #priceBtn {
+		width: 200px;
+		display: block;
 		text-align: center;
-		font-weight: bold;
-		margin-top: 100px;
-}
-
-#service .price #price_button {
 		font-size: 1.2rem;
 		font-weight: normal;
 		color: #fff;
 		background: #444;
-		padding: 10px 14px;
+		padding: 5px 10px;
 		border-radius: 6px;
 		-webkit-transition: all 0.3s;
 		transition: all 0.3s;
 		cursor: pointer;
+		margin: 50px auto 0;
 }
 
-#service .price #price_button:hover {
+#service .priceContent #priceBtn:hover {
 		color: #333;
 		background: #fff;
 		text-decoration: none;
 		font-weight: bold;
 }
 
-#service .prices {
+#service .priceContent .priceDetail {
 		display: none;
 		overflow: hidden;
 }
 
-#service .prices .table_container {
-		margin-top: 80px;
+#service .priceContent .priceDetail .priceTable {
+		width: 500px;
+		margin: 30px auto 0;
 }
 
-#service .prices .table_container th,
-#service .prices .table_container td {
+#service .priceContent .priceDetail .priceTable th, #service .priceContent .priceDetail .priceTable td {
 		text-align: left;
 		color: #444;
 		font-size: 1.6rem;
@@ -899,44 +894,28 @@ header nav ul li a:hover:after {
 		padding: 6px 0;
 }
 
-#service .prices .table_container th {
+#service .priceContent .priceDetail .priceTable th {
 		padding-right: 20px;
 }
 
-#service .prices .table_container th i {
+#service .priceContent .priceDetail .priceTable th i {
 		color: rgba(140, 50, 52, 0.9);
 		font-size: 1.8rem;
 }
 
-#service .prices .price_list_sp {
+#service .priceContent .priceDetail .priceListSp {
 		display: none;
 }
 
-#service .prices a {
-		text-decoration: underline;
-		-webkit-transition: all 0.3s;
-		transition: all 0.3s;
+#service .priceContent .priceDetail .textWrap {
+		margin-top: 30px;
 }
 
-#service .prices a:hover {
-		font-weight: bold;
-		color: rgba(140, 50, 52, 0.9);
-}
-
-#service .prices .example_text {
-		text-align: center;
-		margin-top: 48px;
-}
-
-#service .prices p {
+#service .priceContent .priceDetail .textWrap p {
 		text-align: center;
 }
 
-#service .prices br {
-		display: none;
-}
-
-#service .br_slash {
+#service .priceContent .priceDetail .textWrap p br {
 		display: none;
 }
 
@@ -949,10 +928,10 @@ header nav ul li a:hover:after {
 				width: 300px;
 				margin: 0 auto;
 		}
-		#service .serviceContent .textWrap .textInner h3 {
+		#service .serviceContent .textWrap .textInner .serviceTitle {
 				font-size: 1.8rem;
 		}
-		#service .serviceContent .textWrap .textInner h3:first-of-type {
+		#service .serviceContent .textWrap .textInner .serviceTitle:first-of-type {
 				padding: 0;
 		}
 }
@@ -968,13 +947,7 @@ header nav ul li a:hover:after {
 		#service .serviceContent .imgWrap img {
 				width: 40%;
 		}
-		#service .serviceContent .imgWrap .smartphone {
-				width: 20%;
-		}
-		#service .serviceContent .imgWrap .domain {
-				padding: 20px 0;
-		}
-		#service .serviceContent .imgWrap .smartphone {
+		#service .serviceContent .imgWrap img.smartphone {
 				width: 20%;
 		}
 		#service .serviceContent .textWrap {
@@ -989,7 +962,7 @@ header nav ul li a:hover:after {
 				-ms-transform: none;
 				transform: none;
 		}
-		#service .serviceContent .textWrap .textInner h3 {
+		#service .serviceContent .textWrap .textInner .serviceTitle {
 				font-size: 1.7rem;
 				display: block;
 				text-align: center;
@@ -1002,60 +975,49 @@ header nav ul li a:hover:after {
 		#service .circleLine {
 				margin-top: 0;
 		}
-		#service .circleLine div {
+		#service .circleLine span {
 				width: 9px;
 				height: 9px;
 		}
-		#service .circleLine div:nth-of-type(2n) {
+		#service .circleLine span:nth-of-type(2n) {
 				margin: 0 40px;
 		}
-		#service .price {
-				margin-top: 60px;
+		#service .priceContent .priceDetail .priceTable {
+				width: 92%;
 		}
-		#service .prices .table_container th,
-		#service .prices .table_container td {
+		#service .priceContent .priceDetail .priceTable th, #service .priceContent .priceDetail .priceTable td {
 				font-size: 1.5rem;
 		}
-		#service .prices .table_container th i {
+		#service .priceContent .priceDetail .priceTable th i {
 				color: rgba(140, 50, 52, 0.9);
 				font-size: 1.8rem;
 		}
 }
 
 @media (max-width: 600px) {
-		#service {
-				padding: 40px 0;
-		}
 		#service .serviceContent .imgWrap img {
 				width: 50%;
 		}
-		#service .serviceContent .imgWrap .smartphone {
+		#service .serviceContent .imgWrap img.smartphone {
 				width: 24%;
 		}
 		#service .serviceContent .textWrap {
 				width: 80%;
 		}
-		#service .price {
-				font-size: 1.2rem;
-		}
-		#service .prices .table_container {
+		#service .priceContent .priceDetail {
 				margin-top: 50px;
 		}
-		#service .prices .table_container th,
-		#service .prices .table_container td {
+		#service .priceContent .priceDetail .priceTable th, #service .priceContent .priceDetail .priceTable td {
 				font-size: 1.4rem;
 		}
-		#service .prices .table_container th {
+		#service .priceContent .priceDetail .priceTable th {
 				padding-right: 10px;
 		}
-		#service .prices .table_container th i {
+		#service .priceContent .priceDetail .priceTable th i {
 				color: rgba(140, 50, 52, 0.9);
 				font-size: 1.8rem;
 		}
-		#service .prices .example_text {
-				margin-bottom: 14px;
-		}
-		#service .prices br {
+		#service .priceContent .priceDetail .textWrap br {
 				display: block !important;
 		}
 }
@@ -1067,69 +1029,58 @@ header nav ul li a:hover:after {
 		#service .serviceContent .imgWrap img {
 				width: 64%;
 		}
-		#service .serviceContent .imgWrap .smartphone {
+		#service .serviceContent .imgWrap img.smartphone {
 				width: 28%;
 		}
 		#service .serviceContent .textWrap {
 				width: 88%;
 		}
-		#service .serviceContent .textWrap .textInner h3 {
+		#service .serviceContent .textWrap .textInner .serviceTitle {
 				font-size: 1.5rem;
 		}
 		#service .serviceContent .textWrap .textInner p {
 				font-size: 1.3rem;
 				line-height: 1.8;
 		}
-		#service .circleLine div {
+		#service .circleLine span {
 				width: 6px;
 				height: 6px;
-				background: rgba(156, 50, 52, 0.6);
 		}
-		#service .circleLine div:nth-of-type(2n) {
-				margin: 0 34px;
+		#service .circleLine span:nth-of-type(2n) {
+				margin: 0 35px;
 		}
-		#service .price {
-				margin-top: 60px;
-		}
-		#service .price #price_button {
+		#service .priceContent #priceBtn {
 				font-size: 1.1rem;
 				padding: 8px 12px;
 		}
-		#service .prices .table_container {
+		#service .priceContent .priceDetail .priceTable {
 				display: none;
 		}
-		#service .prices .price_list_sp {
+		#service .priceContent .priceDetail .priceListSp {
 				text-align: center;
 				display: block;
 				margin-top: 40px;
 		}
-		#service .prices .price_list_sp li {
+		#service .priceContent .priceDetail .priceListSp li {
 				color: #444;
 				font-size: 1.2rem;
 				font-weight: bold;
 				margin: 16px 0;
 		}
-		#service .prices .price_list_sp li i {
+		#service .priceContent .priceDetail .priceListSp li i {
 				color: rgba(140, 50, 52, 0.9);
 		}
-		#service .prices .price_list_sp div {
-				width: 40%;
-				height: 1px;
-				background: rgba(140, 50, 52, 0.5);
-				border-radius: 40%;
-				margin: 0 auto;
-		}
-		#service .prices p {
+		#service .priceContent .priceDetail .textWrap p {
 				font-size: 1.2rem;
 		}
 }
 
 @media (max-width: 400px) {
-		#service .slash {
-				display: none;
-		}
-		#service .br_slash {
+		#service .serviceContent .textWrap .textInner .serviceTitle .brSlash {
 				display: block;
+		}
+		#service .serviceContent .textWrap .textInner .serviceTitle .slash {
+				display: none;
 		}
 }
 
@@ -1183,7 +1134,7 @@ header nav ul li a:hover:after {
 		margin-top: 50px;
 }
 
-#works .flex {
+#works .workContent {
 		height: 560px;
 		display: flex;
 		-o-display: flex;
@@ -1194,12 +1145,12 @@ header nav ul li a:hover:after {
 		padding: 40px 0;
 }
 
-#works .flex p {
+#works .workContent p {
 		margin-top: 10px;
 		margin-bottom: 20px;
 }
 
-#works .flex .works_version {
+#works .workContent .works_version {
 		width: 70px;
 		font-size: 1.4rem;
 		background-color: rgba(130, 50, 52, 0.8);
@@ -1334,7 +1285,7 @@ header nav ul li a:hover:after {
 				height: 30px;
 				margin-top: -100px;
 		}
-		#works .swiper-container .swiper-slide .flex {
+		#works .swiper-container .swiper-slide .workContent {
 				display: none;
 		}
 		#works .tabs {

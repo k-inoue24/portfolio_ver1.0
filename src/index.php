@@ -84,8 +84,8 @@
       </div>
       <div class="switchText" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">・MODE SWITCH・</span>
       <ul class="modeSwitch" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">
-        <li><a class="active" id="work_btn" data-target="work">WORK</a></li>
-        <li><a id="life_btn" data-target="life">LIFE</a></li>
+        <li><a class="active" id="workBtn" data-target="work">WORK</a></li>
+        <li><a id="lifeBtn" data-target="life">LIFE</a></li>
       </ul>
     </div>
   </section>
@@ -98,7 +98,7 @@
               </div>
               <div class="textWrap">
                   <div class="textInner">
-                      <h3 class="serviceTitle">ランディングページ<br class="br_slash"><span class="slash">/</span>コーポレイトサイト制作</h3>
+                      <h3 class="serviceTitle">ランディングページ<br class="brSlash"><span class="slash">/</span>コーポレイトサイト制作</h3>
                       <span class="titleBorder"></span>
                       <p>販促を目的とした1枚のランディングページや、複数ページを持つコーポレイトサイトの制作を担当します。サイトの目的に応じたデザインの提案が可能です。すでにデザイン案をお持ちの場合は、コーディングの代行をお任せください。</p>
                   </div>
@@ -145,65 +145,57 @@
               <span></span>
               <span></span>
           </div>
-          <div class="prices_acd" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">
-              <p class="price"><a id="price_button" class="prices_head"><i class="fas fa-chevron-circle-down"></i> 各制作の費用感はこちら <i class="fas fa-chevron-circle-down"></i></a></p>
-              <div class="prices" id="price">
-                  <div class="table_container" align="center">
-                      <table>
-                          <tr>
-                              <th><i class="fas fa-caret-right"></i> ランディングページ/コーディング</th>
-                              <td>：30,000円〜</td>
-                          </tr>
-                          <tr>
-                              <th><i class="fas fa-caret-right"></i> ランディングページ/デザイン&コーディング</th>
-                              <td>：50,000円〜</td>
-                          </tr>
-                          <tr>
-                              <th><i class="fas fa-caret-right"></i> コーポレイトサイト/TOPページコーディング</th>
-                              <td>：15,000円〜</td>
-                          </tr>
-                          <tr>
-                              <th><i class="fas fa-caret-right"></i> コーポレイトサイト/下層1ページコーディング</th>
-                              <td>：10,000円〜</td>
-                          </tr>
-                          <tr>
-                              <th><i class="fas fa-caret-right"></i> レスポンシブ化/1ページ(デザイン提案込み)</th>
-                              <td>：10,000円〜</td>
-                          </tr>
-                          <tr>
-                              <th><i class="fas fa-caret-right"></i> WordPress化/1ページ</th>
-                              <td>：10,000円〜</td>
-                          </tr>
-                          <tr>
-                              <th><i class="fas fa-caret-right"></i> ドメイン&サーバー契約代行</th>
-                              <td>：8,000円〜</td>
-                          </tr>
-                          <tr>
-                              <th><i class="fas fa-caret-right"></i> サイト運用・保守</th>
-                              <td>：5,000円/月〜</td>
-                          </tr>
-                      </table>
-                  </div>
-                  <ul class="price_list_sp">
-                      <li>ランディングページ/コーディング<br><i class="fas fa-caret-right"></i> 30,000円〜</li>
-                      <div></div>
-                      <li>ランディングページ/デザイン&コーディング<br><i class="fas fa-caret-right"></i> 50,000円〜</li>
-                      <div></div>
-                      <li>コーポレイトサイト/TOPページコーディング<br><i class="fas fa-caret-right"></i> 15,000円〜</li>
-                      <div></div>
-                      <li>コーポレイトサイト/下層1ページコーディング<br><i class="fas fa-caret-right"></i> 10,000円〜</li>
-                      <div></div>
-                      <li>レスポンシブ化/1ページ(デザイン提案込み)<br><i class="fas fa-caret-right"></i> 10,000円〜</li>
-                      <div></div>
-                      <li>WordPress化/1ページ<br><i class="fas fa-caret-right"></i> 10,000円〜</li>
-                      <div></div>
-                      <li> ドメイン&サーバー契約代行<br><i class="fas fa-caret-right"></i> 8,000円〜</li>
-                      <div></div>
-                      <li>サイト運用・保守<br><i class="fas fa-caret-right"></i> 5,000円/月〜</li>
-                      <div></div>
-                  </ul>
-                  <p class="example_text">上記価格は目安になります。<br>ご依頼の内容次第で、価格は変動する見込みです。</p>
-                  <p>各サービスの詳細や価格感については、<br><a href="#contact">お問い合わせ</a>よりお気軽にご相談ください。</p>
+          <div class="priceContent" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">
+            <a id="priceBtn"><i class="fas fa-chevron-circle-down"></i> 各制作の費用感はこちら <i class="fas fa-chevron-circle-down"></i></a>
+            <div class="priceDetail">
+              <table class="priceTable">
+                  <tr>
+                      <th><i class="fas fa-caret-right"></i> ランディングページ/コーディング</th>
+                      <td>：30,000円〜</td>
+                  </tr>
+                  <tr>
+                      <th><i class="fas fa-caret-right"></i> ランディングページ/デザイン&コーディング</th>
+                      <td>：50,000円〜</td>
+                  </tr>
+                  <tr>
+                      <th><i class="fas fa-caret-right"></i> コーポレイトサイト/TOPページコーディング</th>
+                      <td>：15,000円〜</td>
+                  </tr>
+                  <tr>
+                      <th><i class="fas fa-caret-right"></i> コーポレイトサイト/下層1ページコーディング</th>
+                      <td>：10,000円〜</td>
+                  </tr>
+                  <tr>
+                      <th><i class="fas fa-caret-right"></i> レスポンシブ化/1ページ(デザイン提案込み)</th>
+                      <td>：10,000円〜</td>
+                  </tr>
+                  <tr>
+                      <th><i class="fas fa-caret-right"></i> WordPress化/1ページ</th>
+                      <td>：10,000円〜</td>
+                  </tr>
+                  <tr>
+                      <th><i class="fas fa-caret-right"></i> ドメイン&サーバー契約代行</th>
+                      <td>：8,000円〜</td>
+                  </tr>
+                  <tr>
+                      <th><i class="fas fa-caret-right"></i> サイト運用・保守</th>
+                      <td>：5,000円/月〜</td>
+                  </tr>
+              </table>
+              <ul class="priceListSp">
+                  <li><i class="fas fa-caret-right"></i> ランディングページ/コーディング<br>30,000円〜</li>
+                  <li><i class="fas fa-caret-right"></i> ランディングページ/デザイン&コーディング<br>50,000円〜</li>
+                  <li><i class="fas fa-caret-right"></i> コーポレイトサイト/TOPページコーディング<br>15,000円〜</li>
+                  <li><i class="fas fa-caret-right"></i> コーポレイトサイト/下層1ページコーディング<br>10,000円〜</li>
+                  <li><i class="fas fa-caret-right"></i> レスポンシブ化/1ページ(デザイン提案込み)<br>10,000円〜</li>
+                  <li><i class="fas fa-caret-right"></i> WordPress化/1ページ<br>10,000円〜</li>
+                  <li><i class="fas fa-caret-right"></i> ドメイン&サーバー契約代行<br>8,000円〜</li>
+                  <li><i class="fas fa-caret-right"></i> サイト運用・保守<br>5,000円/月〜</li>
+              </ul>
+              <div class="textWrap">
+                <p>上記価格は目安になります。<br>ご依頼の内容次第で、価格は変動する見込みです。</p>
+                <p>各サービスの詳細や価格感については、<br><a href="#contact" class="basicLink">お問い合わせ</a>よりお気軽にご相談ください。</p>
+              </div>
               </div>
           </div>
       </div>
@@ -215,7 +207,7 @@
           <div class="swiper-container" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-anchor-placement="top-center">
               <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                      <div class="serviceContent">
+                      <div class="workContent">
                           <div class="pc_image">
                               <p class="works_version">PC.ver</p>
                               <div class="img_box">
@@ -258,7 +250,7 @@
                   </div>
 
                   <div class="swiper-slide">
-                      <div class="serviceContent">
+                      <div class="workContent">
                           <div class="pc_image">
                               <p class="works_version">PC.ver</p>
                               <div class="img_box">
@@ -300,7 +292,7 @@
                       </div>
                   </div>
                   <div class="swiper-slide">
-                      <div class="serviceContent">
+                      <div class="workContent">
                           <div class="pc_image">
                               <p class="works_version">PC.ver</p>
                               <div class="img_box">
@@ -342,7 +334,7 @@
                       </div>
                   </div>
                   <div class="swiper-slide">
-                      <div class="serviceContent">
+                      <div class="workContent">
                           <div class="pc_image">
                               <p class="works_version">PC.ver</p>
                               <div class="img_box">
@@ -384,7 +376,7 @@
                       </div>
                   </div>
                   <div class="swiper-slide">
-                      <div class="serviceContent">
+                      <div class="workContent">
                           <div class="pc_image">
                               <p class="works_version">PC.ver</p>
                               <div class="img_box">
