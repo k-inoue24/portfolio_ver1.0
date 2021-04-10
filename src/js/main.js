@@ -2,10 +2,10 @@
 
 $(window).on('load', function() {
   // ローディングアイコンの表示
-  $('#loader_bg').fadeOut(400);
+  $('#loaderBg').fadeOut(400);
 
   // 名前のタイピング表示
-  $('.top_name')
+  $('.brandingName')
     .typist({
         speed: 7
     }).typistAdd('Keita Inoue')
@@ -13,7 +13,7 @@ $(window).on('load', function() {
 
 // スムーススクロール
 var scroll = new SmoothScroll('a[href*="#"]', {
-  header: '#header',
+  header: 'header',
   speed: 800,
 });
 
@@ -26,28 +26,26 @@ new AOS.init({
 // SP版ナビゲーション処理
 $('.toggle').on('click',function() {
   $('body').toggleClass('open');
-  $('.menu').fadeIn();
+  $('.spMenu').fadeIn();
 });
-$('.menu').on('click',function() {
-  $('.menu').fadeOut();
+$('.spMenu').on('click',function() {
+  $('.spMenu').fadeOut();
   $('body').removeClass('open');
 });
 
 // ABOUT:MODE切替
-$('.horizontal a').on('click',function(){
-  $('.horizontal a').removeClass('active');
+$('.modeSwitch a').on('click',function(){
+  $('.modeSwitch a').removeClass('active');
   $(this).addClass('active');
   $('.modeSection').hide();
   $('#' + $(this).data('target')).fadeIn();
 })
 
 // ABOUT:MODE切替時の表示位置調整
-var position = $("#about_title").offset().top;
+var position = $('#about').offset().top - $('header').height();
 $("#work_btn,#life_btn").click(function() {
   $("html,body").animate({
     scrollTop: position
-  }, {
-    queue: false
   });
 });
 
