@@ -193,8 +193,8 @@ section {
 /* ローディングGIF */
 #loaderBg {
 		background: #fff;
-		height: 100%;
-		width: 100%;
+		width: 100vw;
+		height: 100vh;
 		position: fixed;
 		top: 0px;
 		left: 0px;
@@ -411,8 +411,8 @@ header nav ul li a:hover:after {
 		display: table;
 		top: 0;
 		left: 0;
-		width: 100%;
-		height: 100%;
+		width: 100vw;
+		height: 100vh;
 		background: rgba(0, 0, 0, 0.8);
 		-webkit-transition: all .5s;
 		transition: all .5s;
@@ -427,7 +427,7 @@ header nav ul li a:hover:after {
 }
 
 .spMenu ul li {
-		width: 300px;
+		width: 100%;
 		height: 56px;
 		line-height: 56px;
 		margin: 0 auto;
@@ -435,6 +435,7 @@ header nav ul li a:hover:after {
 }
 
 .spMenu ul li a {
+		width: 100%;
 		font-family: 'Scheherazade', serif;
 		display: block;
 		font-size: 2.7rem;
@@ -466,7 +467,7 @@ header nav ul li a:hover:after {
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-		height: 100vh;
+		height: calc(100vh - 80px);
 		min-height: 580px;
 		font-family: 'Marion', sans-serif;
 		letter-spacing: 2px;
@@ -514,6 +515,8 @@ header nav ul li a:hover:after {
 }
 
 .brandingContent .brandingWrapper .contactLink {
+		font-family: 'Scheherazade', serif;
+		font-size: 1.8rem;
 		display: block;
 		width: 230px;
 		height: 44px;
@@ -578,6 +581,7 @@ header nav ul li a:hover:after {
 
 @media (max-width: 767px) {
 		.brandingContent {
+				height: calc(100vh - 66px);
 				margin-top: 66px;
 		}
 		.brandingContent:before {

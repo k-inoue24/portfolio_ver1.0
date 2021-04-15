@@ -194,8 +194,8 @@ section {
 /* ローディングGIF */
 #loaderBg {
 	background: #fff;
-	height: 100%;
-	width: 100%;
+	width: 100vw;
+	height: 100vh;
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -415,8 +415,8 @@ header {
 	display: table;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	background: rgba(0, 0, 0, 0.8);
 	-webkit-transition: all .5s;
 	transition: all .5s;
@@ -427,12 +427,13 @@ header {
 		display: table-cell;
 		vertical-align: middle;
 		li {
-			width: 300px;
+			width: 100%;
 			height: 56px;
 			line-height: 56px;
 			margin: 0 auto;
 			text-align: center;
 			a {
+				width: 100%;
 				font-family: 'Scheherazade', serif;
 				display: block;
 				font-size: 2.7rem;
@@ -468,7 +469,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	height: 100vh;
+	height: calc(100vh - 80px);
 	min-height: 580px;
 	font-family: 'Marion', sans-serif;
 	letter-spacing: 2px;
@@ -509,10 +510,12 @@ header {
 			text-shadow: 2px 2px 3px #222;
 		}
 		.contactLink {
+      font-family: 'Scheherazade', serif;
+      font-size: 1.8rem;
 			display: block;
 			width: 230px;
 			height: 44px;
-			line-height: 44px;
+      line-height: 44px;
 			background: rgba(251, 251, 251, 0.9);
 			border-width: 1px;
 			border-style: solid;
@@ -581,6 +584,7 @@ header {
 
 @media (max-width: 767px) {
 	.brandingContent {
+		height: calc(100vh - 66px);
 		margin-top: 66px;
 		&:before {
 			margin-top: 66px;

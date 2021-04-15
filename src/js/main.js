@@ -1,5 +1,18 @@
 'use strict';
 
+  $(function(){
+    // KV切替
+    $('.brandingContent').bgSwitcher({
+      images: ['/wp-content/themes/inouekeita_portfolio_ver3.0/img/top-image1.jpg', '/wp-content/themes/inouekeita_portfolio_ver3.0/img/top-image2.jpg', '/wp-content/themes/inouekeita_portfolio_ver3.0/img/top-image1.jpg', '/wp-content/themes/inouekeita_portfolio_ver3.0/img/top-image3.jpg'],
+      interval: 4900,
+      loop: true,
+      shuffle: false,
+      effect: "fade",
+      duration: 2000,
+      easing: "linear"
+    });
+  })
+
 $(window).on('load', function() {
   // ローディングアイコンの表示
   $('#loaderBg').fadeOut(400);
@@ -34,7 +47,7 @@ $('.toggle').on('click',function() {
   $('body').toggleClass('open');
   $('.spMenu').fadeIn();
 });
-$('.spMenu').on('click',function() {
+$('.spMenu,.spMenu a').on('click',function() {
   $('.spMenu').fadeOut();
   $('body').removeClass('open');
 });
