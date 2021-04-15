@@ -20,7 +20,7 @@
   </div>
   <header>
     <div class="contentInner">
-      <h1 class="siteTitle"><a href="#top">Keita Inoue</a><span>Web Engineer's portfolio</span></h1>
+      <h1 class="siteTitle"><a href="#">Keita Inoue</a><span>Web Engineer's portfolio</span></h1>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
@@ -58,7 +58,7 @@
       <h2 class="sectionTitle" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-anchor-placement="bottom-bottom">ABOUT<span>-自己紹介-</span></h2>
       <div class="modeSection" id="work">
         <div class="modeWrap">
-          <img class="modeImage" src="<?php echo get_template_directory_uri(); ?>/img/profile-work.jpg" alt="KeitaInoue">
+          <img class="modeImage"  data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-anchor-placement="center-bottom" src="<?php echo get_template_directory_uri(); ?>/img/profile-work.jpg" alt="KeitaInoue">
           <div class="modeText" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-anchor-placement="center-bottom">
             <p>フリーランスWebエンジニアとして活動している井上恵太と申します。<br> 専門はWEBサイト制作全般です。</p>
             <ul>
@@ -74,7 +74,7 @@
       </div>
       <div class="modeSection" id="life">
         <div class="modeWrap">
-          <img class="modeImage" src="<?php echo get_template_directory_uri(); ?>/img/profile-life.jpg" alt="KeitaInoue">
+          <img class="modeImage" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-anchor-placement="center-bottom" src="<?php echo get_template_directory_uri(); ?>/img/profile-life.jpg" alt="KeitaInoue">
           <div class="modeText" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-anchor-placement="center-bottom">
             <p>東京と東南アジア諸国を拠点に生活しています。<br> トップを飾っている背景画像は、タイ・チェンマイの伝統行事『コムローイ祭り』にて撮影したものです。</p>
             <p>場所と時間に縛られない生活をしているメリットを生かし、お客様からのご連絡には迅速に対応させていただいています。<br>ご所望であれば、直接対面での打ち合わせにも可能な限り応じる所存です。</p>
@@ -183,14 +183,14 @@
                   </tr>
               </table>
               <ul class="priceListSp">
-                  <li><i class="fas fa-caret-right"></i> ランディングページ/コーディング<br>30,000円〜</li>
-                  <li><i class="fas fa-caret-right"></i> ランディングページ/デザイン&コーディング<br>50,000円〜</li>
-                  <li><i class="fas fa-caret-right"></i> コーポレイトサイト/TOPページコーディング<br>15,000円〜</li>
-                  <li><i class="fas fa-caret-right"></i> コーポレイトサイト/下層1ページコーディング<br>10,000円〜</li>
-                  <li><i class="fas fa-caret-right"></i> レスポンシブ化/1ページ(デザイン提案込み)<br>10,000円〜</li>
-                  <li><i class="fas fa-caret-right"></i> WordPress化/1ページ<br>10,000円〜</li>
-                  <li><i class="fas fa-caret-right"></i> ドメイン&サーバー契約代行<br>8,000円〜</li>
-                  <li><i class="fas fa-caret-right"></i> サイト運用・保守<br>5,000円/月〜</li>
+                <li><i class="fas fa-caret-right"></i> ランディングページ/コーディング<br>30,000円〜</li>
+                <li><i class="fas fa-caret-right"></i> ランディングページ/デザイン&コーディング<br>50,000円〜</li>
+                <li><i class="fas fa-caret-right"></i> コーポレイトサイト/TOPページコーディング<br>15,000円〜</li>
+                <li><i class="fas fa-caret-right"></i> コーポレイトサイト/下層1ページコーディング<br>10,000円〜</li>
+                <li><i class="fas fa-caret-right"></i> レスポンシブ化/1ページ(デザイン提案込み)<br>10,000円〜</li>
+                <li><i class="fas fa-caret-right"></i> WordPress化/1ページ<br>10,000円〜</li>
+                <li><i class="fas fa-caret-right"></i> ドメイン&サーバー契約代行<br>8,000円〜</li>
+                <li><i class="fas fa-caret-right"></i> サイト運用・保守<br>5,000円/月〜</li>
               </ul>
               <div class="textWrap">
                 <p>上記価格は目安になります。<br>ご依頼の内容次第で、価格は変動する見込みです。</p>
@@ -202,248 +202,300 @@
   </section>
   <section id="works">
       <h2 class="sectionTitle" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-anchor-placement="bottom-bottom">WORKS<span>-制作実績-</span></h2>
-      <div>
-          <p class="works_introduction" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-anchor-placement="top-center">制作実績の一部を掲載しています。<br class="works_br_sp">各キャプチャ画像をスクロールしてご確認ください。</p>
+          <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-anchor-placement="top-center">制作実績の一部を掲載しています。<br>各キャプチャ画像をスクロールしてご確認ください。</p>
           <div class="swiper-container" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-anchor-placement="top-center">
               <div class="swiper-wrapper">
                   <div class="swiper-slide">
                       <div class="workContent">
-                          <div class="pc_image">
-                              <p class="works_version">PC.ver</p>
-                              <div class="img_box">
+                          <div class="pcImage">
+                              <span class="worksVersion">PC.ver</span>
+                              <div class="imgBox">
                                   <img src="<?php echo get_template_directory_uri(); ?>/img/photo-studio-pc.png" alt="写真スタジオサイト/PC版">
                               </div>
                           </div>
-                          <div class="sp_image">
-                              <p class="works_version">SP.ver</p>
-                              <div class="img_box">
+                          <div class="spImage">
+                              <span class="worksVersion">SP.ver</span>
+                              <div class="imgBox">
                                   <img src="<?php echo get_template_directory_uri(); ?>/img/photo-studio-sp.png" alt="写真スタジオサイト/SP版">
                               </div>
                           </div>
                       </div>
-                      <div class="tabs tabs_animate">
+                      <div class="tabs tabsAnimate">
                           <ul class="horizontal">
-                              <li><a href=".pc_ver">PC.ver</a></li>
-                              <li><a href=".sp_ver">SP.ver</a></li>
+                              <li class="active" data-version="pcVer">PC.ver</li>
+                              <li data-version="spVer">SP.ver</li>
                           </ul>
-                          <div class="pc_ver">
-                              <div class="pc_image">
-                                  <div class="img_box">
+                          <div class="pcVer">
+                              <div class="pcImage">
+                                  <div class="imgBox">
                                       <img src="<?php echo get_template_directory_uri(); ?>/img/photo-studio-pc.png" alt="写真スタジオサイト/PC版">
                                   </div>
                               </div>
                           </div>
-                          <div class="sp_ver">
-                              <div class="sp_image">
-                                  <div class="img_box">
+                          <div class="spVer">
+                              <div class="spImage">
+                                  <div class="imgBox">
                                       <img src="<?php echo get_template_directory_uri(); ?>/img/photo-studio-sp.png" alt="写真スタジオサイト/SP版">
                                   </div>
                               </div>
                           </div>
                       </div>
-                      <div class="works_explain">
-                          <p class="works_explain_detail">写真スタジオのWebサイト制作を担当。</p>
-                          <p><span class="works_title">担当</span><span class="works_text">Webデザイン/コーディング/お問い合わせフォーム実装</span></p>
-                          <p><span class="works_title">使用スキル</span><span class="works_text">HTML5/CSS3/JavaScript/Vue.js/jQuery/PHP</span></p>
-                          <p><span class="works_title">クライアント</span><span class="works_text"><a href="https://www.studio-berry.com/" target="_blank">studio berry <i class="fas fa-external-link-alt"></i></a></span></p>
+                      <div class="worksDetailWrap">
+                          <p>写真スタジオのWebサイト制作を担当。</p>
+                          <div class="centerAdjust">
+                            <dl>
+                              <dt class="workTitle">担当</dt>
+                              <dd class="workText">Webデザイン/コーディング/お問い合わせフォーム実装</dd>
+                              <dt class="workTitle">使用スキル</dt>
+                              <dd class="workText">HTML5/CSS3/JavaScript/Vue.js/jQuery/PHP</dd>
+                              <dt class="workTitle">リリース日</dt>
+                              <dd class="workText">2019年7月</dd>
+                              <dt class="workTitle">クライアント</dt>
+                              <dd class="workText"><a href="https://www.studio-berry.com/" target="_blank">studio berry <i class="fas fa-external-link-alt"></i></a></dd>
+                            </dl>
+                          </div>
                       </div>
                   </div>
 
                   <div class="swiper-slide">
                       <div class="workContent">
-                          <div class="pc_image">
-                              <p class="works_version">PC.ver</p>
-                              <div class="img_box">
+                          <div class="pcImage">
+                              <span class="worksVersion">PC.ver</span>
+                              <div class="imgBox">
                                   <img src="<?php echo get_template_directory_uri(); ?>/img/aoyama-inochi-pc.png" alt="接骨院サイト（不妊治療専門）/PC版">
                               </div>
                           </div>
-                          <div class="sp_image">
-                              <p class="works_version">SP.ver</p>
-                              <div class="img_box">
+                          <div class="spImage">
+                              <span class="worksVersion">SP.ver</span>
+                              <div class="imgBox">
                                   <img src="<?php echo get_template_directory_uri(); ?>/img/aoyama-inochi-sp.png" alt="接骨院サイト（不妊治療専門）/SP版">
                               </div>
                           </div>
                       </div>
-                      <div class="tabs tabs_animate">
+                      <div class="tabs tabsAnimate">
                           <ul class="horizontal">
-                              <li><a href=".pc_ver">PC.ver</a></li>
-                              <li><a href=".sp_ver">SP.ver</a></li>
+                            <li class="active" data-version="pcVer">PC.ver</li>
+                            <li data-version="spVer">SP.ver</li>
                           </ul>
-                          <div class="pc_ver">
-                              <div class="pc_image">
-                                  <div class="img_box">
+                          <div class="pcVer">
+                              <div class="pcImage">
+                                  <div class="imgBox">
                                       <img src="<?php echo get_template_directory_uri(); ?>/img/aoyama-inochi-pc.png" alt="接骨院サイト（不妊治療専門）/PC版">
                                   </div>
                               </div>
                           </div>
-                          <div class="sp_ver">
-                              <div class="sp_image">
-                                  <div class="img_box">
+                          <div class="spVer">
+                              <div class="spImage">
+                                  <div class="imgBox">
                                       <img src="<?php echo get_template_directory_uri(); ?>/img/aoyama-inochi-sp.png" alt="接骨院サイト（不妊治療専門）/SP版">
                                   </div>
                               </div>
                           </div>
                       </div>
-                      <div class="works_explain">
-                          <p class="works_explain_detail">接骨院（不妊治療専門）のWebサイト制作を担当。</p>
-                          <p><span class="works_title">担当</span><span class="works_text">Webデザイン/コーディング/WordPress構築</span></p>
-                          <p><span class="works_title">使用スキル</span><span class="works_text">HTML5/CSS3(SCSS)/gulp.js/PHP/WordPress</span></p>
-                          <p><span class="works_title">クライアント</span><span class="works_text"><a href="https://www.aoyamastreet.com/inochi/" target="_blank">青山通り接骨院/不妊治療専門 <i class="fas fa-external-link-alt"></i></a></span></p>
+                      <div class="worksDetailWrap">
+                          <p>接骨院（不妊治療専門）のWebサイト制作を担当。</p>
+                          <div class="centerAdjust">
+                            <dl>
+                              <dt class="workTitle">担当</dt>
+                              <dd class="workText">Webデザイン/コーディング/WordPress構築</dd>
+                              <dt class="workTitle">使用スキル</dt>
+                              <dd class="workText">HTML5/CSS3(SCSS)/gulp.js/PHP/WordPress</dd>
+                              <dt class="workTitle">リリース日</dt>
+                              <dd class="workText">2019年8月</dd>
+                              <dt class="workTitle">クライアント</dt>
+                              <dd class="workText"><a href="https://www.aoyamastreet.com/inochi/" target="_blank">青山通り接骨院/不妊治療専門 <i class="fas fa-external-link-alt"></i></a></dd>
+                            </dl>
+                          </div>
                       </div>
                   </div>
                   <div class="swiper-slide">
                       <div class="workContent">
-                          <div class="pc_image">
-                              <p class="works_version">PC.ver</p>
-                              <div class="img_box">
+                          <div class="pcImage">
+                              <span class="worksVersion">PC.ver</span>
+                              <div class="imgBox">
                                   <img src="<?php echo get_template_directory_uri(); ?>/img/aoyama-pc.png" alt="接骨院サイト（総合）/PC版">
                               </div>
                           </div>
-                          <div class="sp_image">
-                              <p class="works_version">SP.ver</p>
-                              <div class="img_box">
+                          <div class="spImage">
+                              <span class="worksVersion">SP.ver</span>
+                              <div class="imgBox">
                                   <img src="<?php echo get_template_directory_uri(); ?>/img/aoyama-sp.png" alt="接骨院サイト（総合）/SP版">
                               </div>
                           </div>
                       </div>
-                      <div class="tabs tabs_animate">
+                      <div class="tabs tabsAnimate">
                           <ul class="horizontal">
-                              <li><a href=".pc_ver">PC.ver</a></li>
-                              <li><a href=".sp_ver">SP.ver</a></li>
+                            <li class="active" data-version="pcVer">PC.ver</li>
+                            <li data-version="spVer">SP.ver</li>
                           </ul>
-                          <div class="pc_ver">
-                              <div class="pc_image">
-                                  <div class="img_box">
+                          <div class="pcVer">
+                              <div class="pcImage">
+                                  <div class="imgBox">
                                       <img src="<?php echo get_template_directory_uri(); ?>/img/aoyama-pc.png" alt="接骨院サイト（総合）/PC版">
                                   </div>
                               </div>
                           </div>
-                          <div class="sp_ver">
-                              <div class="sp_image">
-                                  <div class="img_box">
+                          <div class="spVer">
+                              <div class="spImage">
+                                  <div class="imgBox">
                                       <img src="<?php echo get_template_directory_uri(); ?>/img/aoyama-sp.png" alt="接骨院サイト（総合）/SP版">
                                   </div>
                               </div>
                           </div>
                       </div>
-                      <div class="works_explain works_explain_long">
-                          <p class="works_explain_detail">接骨院のWebサイト制作を担当。</p>
-                          <p><span class="works_title">担当</span><span class="works_text">Webデザイン/コーディング/WordPress構築</span></p>
-                          <p><span class="works_title">使用スキル</span><span class="works_text">HTML5/CSS3(SCSS)/JavaScript/jQuery<br class="works_text_br">/PHP/WordPress</span></p>
-                          <p><span class="works_title">クライアント</span><span class="works_text"><a href="https://www.aoyamastreet.com/" target="_blank">青山通り接骨院/総合 <i class="fas fa-external-link-alt"></i></a></span></p>
+                      <div class="worksDetailWrap">
+                          <p>接骨院のWebサイト制作を担当。</p>
+                          <div class="centerAdjust">
+                            <dl>
+                              <dt class="workTitle">担当</dt>
+                              <dd class="workText">Webデザイン/コーディング/WordPress構築</dd>
+                              <dt class="workTitle">使用スキル</dt>
+                              <dd class="workText">HTML5/CSS3(SCSS)/JavaScript/jQuery<br class="worksTextBr">/PHP/WordPress</dd>
+                              <dt class="workTitle">リリース日</dt>
+                              <dd class="workText">2019年9月</dd>
+                              <dt class="workTitle">クライアント</dt>
+                              <dd class="workText"><a href="https://www.aoyamastreet.com/" target="_blank">青山通り接骨院/総合 <i class="fas fa-external-link-alt"></i></a></dd>
+                            </dl>
+                          </div>
                       </div>
                   </div>
                   <div class="swiper-slide">
                       <div class="workContent">
-                          <div class="pc_image">
-                              <p class="works_version">PC.ver</p>
-                              <div class="img_box">
+                          <div class="pcImage">
+                              <span class="worksVersion">PC.ver</span>
+                              <div class="imgBox">
                                   <img src="<?php echo get_template_directory_uri(); ?>/img/aoyama-jiko-pc.png" alt="接骨院サイト（交通事故専門）/PC版">
                               </div>
                           </div>
-                          <div class="sp_image">
-                              <p class="works_version">SP.ver</p>
-                              <div class="img_box">
+                          <div class="spImage">
+                              <span class="worksVersion">SP.ver</span>
+                              <div class="imgBox">
                                   <img src="<?php echo get_template_directory_uri(); ?>/img/aoyama-jiko-sp.png" alt="接骨院サイト（交通事故専門）/ SP版">
                               </div>
                           </div>
                       </div>
-                      <div class="tabs tabs_animate">
+                      <div class="tabs tabsAnimate">
                           <ul class="horizontal">
-                              <li><a href=".pc_ver">PC.ver</a></li>
-                              <li><a href=".sp_ver">SP.ver</a></li>
+                            <li class="active" data-version="pcVer">PC.ver</li>
+                            <li data-version="spVer">SP.ver</li>
                           </ul>
-                          <div class="pc_ver">
-                              <div class="pc_image">
-                                  <div class="img_box">
+                          <div class="pcVer">
+                              <div class="pcImage">
+                                  <div class="imgBox">
                                       <img src="<?php echo get_template_directory_uri(); ?>/img/aoyama-jiko-pc.png" alt="接骨院サイト（交通事故専門）/PC版">
                                   </div>
                               </div>
                           </div>
-                          <div class="sp_ver">
-                              <div class="sp_image">
-                                  <div class="img_box">
+                          <div class="spVer">
+                              <div class="spImage">
+                                  <div class="imgBox">
                                       <img src="<?php echo get_template_directory_uri(); ?>/img/aoyama-jiko-sp.png" alt="接骨院サイト(交通事故専門)/SP版">
                                   </div>
                               </div>
                           </div>
                       </div>
-                      <div class="works_explain works_explain_long">
-                          <p class="works_explain_detail">接骨院（交通事故専門）のWebサイト制作を担当。</p>
-                          <p><span class="works_title">担当</span><span class="works_text">Webデザイン/コーディング/WordPress構築</span></p>
-                          <p><span class="works_title">使用スキル</span><span class="works_text">HTML5/CSS3(SCSS)/JavaScript/jQuery<br class="works_text_br">/PHP/WordPress</span></p>
-                          <p><span class="works_title">クライアント</span><span class="works_text"><a href="https://www.aoyamastreet.com/jiko/" target="_blank">青山通り接骨院/交通事故専門 <i class="fas fa-external-link-alt"></i></a></span></p>
+                      <div class="worksDetailWrap">
+                          <p>接骨院（交通事故専門）のWebサイト制作を担当。</p>
+                          <div class="centerAdjust">
+                            <dl>
+                              <dt class="workTitle">担当</dt>
+                              <dd class="workText">Webデザイン/コーディング/WordPress構築</dd>
+                              <dt class="workTitle">使用スキル</dt>
+                              <dd class="workText">HTML5/CSS3(SCSS)/JavaScript/jQuery<br class="worksTextBr">/PHP/WordPress</dd>
+                              <dt class="workTitle">リリース日</dt>
+                              <dd class="workText">2019年9月</dd>
+                              <dt class="workTitle">クライアント</dt>
+                              <dd class="workText"><a href="https://www.aoyamastreet.com/jiko/" target="_blank">青山通り接骨院/交通事故専門 <i class="fas fa-external-link-alt"></i></a></dd>
+                            </dl>
+                          </div>
                       </div>
                   </div>
                   <div class="swiper-slide">
                       <div class="workContent">
-                          <div class="pc_image">
-                              <p class="works_version">PC.ver</p>
-                              <div class="img_box">
+                          <div class="pcImage">
+                              <span class="worksVersion">PC.ver</span>
+                              <div class="imgBox">
                                   <img src="<?php echo get_template_directory_uri(); ?>/img/MyPortfolio-pc.png" alt="ポートフォリオサイト/PC版">
                               </div>
                           </div>
-                          <div class="sp_image">
-                              <p class="works_version">SP.ver</p>
-                              <div class="img_box">
+                          <div class="spImage">
+                              <span class="worksVersion">SP.ver</span>
+                              <div class="imgBox">
                                   <img src="<?php echo get_template_directory_uri(); ?>/img/MyPortfolio-sp.png" alt="ポートフォリオサイト/SP版">
                               </div>
                           </div>
                       </div>
-                      <div class="tabs tabs_animate">
+                      <div class="tabs tabsAnimate">
                           <ul class="horizontal">
-                              <li><a href=".pc_ver">PC.ver</a></li>
-                              <li><a href=".sp_ver">SP.ver</a></li>
+                            <li class="active" data-version="pcVer">PC.ver</li>
+                            <li data-version="spVer">SP.ver</li>
                           </ul>
-                          <div class="pc_ver">
-                              <div class="pc_image">
-                                  <div class="img_box">
+                          <div class="pcVer">
+                              <div class="pcImage">
+                                  <div class="imgBox">
                                       <img src="<?php echo get_template_directory_uri(); ?>/img/MyPortfolio-pc.png" alt="ポートフォリオサイト/PC版">
                                   </div>
                               </div>
                           </div>
-                          <div class="sp_ver">
-                              <div class="sp_image">
-                                  <div class="img_box">
+                          <div class="spVer">
+                              <div class="spImage">
+                                  <div class="imgBox">
                                       <img src="<?php echo get_template_directory_uri(); ?>/img/MyPortfolio-sp.png" alt="ポートフォリオサイト/SP版">
                                   </div>
                               </div>
                           </div>
                       </div>
-                      <div class="works_explain works_explain_long">
-                          <p class="works_explain_detail">オリジナルのポートフォリオサイトを制作。</p>
-                          <p><span class="works_title">担当</span><span class="works_text">Webデザイン/コーディング/WordPress構築</span></p>
-                          <p><span class="works_title">使用スキル</span><span class="works_text">HTML5/CSS3(SCSS)/JavaScript/Vue.js/gulp.js<br class="works_text_br">/PHP/WordPress</span></p>
-                          <p><span class="works_title">URL</span><span class="works_text"><a href="https://inouekeita.work/" target="_blank">https://inouekeita.work/</a></span></p>
-
+                      <div class="worksDetailWrap">
+                          <p>オリジナルのポートフォリオサイトを制作。</p>
+                          <div class="centerAdjust">
+                            <dl>
+                              <dt class="workTitle">担当</dt>
+                              <dd class="workText">Webデザイン/コーディング/WordPress構築</dd>
+                              <dt class="workTitle">使用スキル</dt>
+                              <dd class="workText">HTML5/CSS3(SCSS)/JavaScript/jQuery<br class="worksTextBr">/PHP/WordPress</dd>
+                              <dt class="workTitle">リリース日</dt>
+                              <dd class="workText">2019年6月</dd>
+                              <dt class="workTitle">サイトURL</dt>
+                              <dd class="workText"><a href="https://inouekeita.work/" target="_blank">https://inouekeita.work/</a></dd>
+                            </dl>
+                          </div>
                       </div>
                   </div>
                   <div class="swiper-slide">
-                      <div class="flex self_application_flex">
-                          <div class="sp_image">
-                              <p class="works_version">SP.ver</p>
-                              <div class="img_box">
+                      <div class="workContent onlySp">
+                          <div class="spImage">
+                              <span class="worksVersion">SP.ver</span>
+                              <div class="imgBox">
                                   <img src="<?php echo get_template_directory_uri(); ?>/img/sakamichi.png" alt="Webアプリケーション/SP版">
                               </div>
                           </div>
                       </div>
-                      <div class="tabs tabs_animate">
+                      <div class="tabs tabsAnimate onlySp">
                           <ul class="horizontal">
-                              <li class="self-application"><a href=".sp_ver">SP.ver</a></li>
+                            <li class="active" data-version="spVer">SP.ver</li>
                           </ul>
-                          <div class="sp_ver">
-                              <div class="sp_image">
-                                  <div class="img_box">
+                          <div class="spVer">
+                              <div class="spImage">
+                                  <div class="imgBox">
                                       <img src="<?php echo get_template_directory_uri(); ?>/img/sakamichi.png" alt="Webアプリケーション/SP版">
                                   </div>
                               </div>
                           </div>
                       </div>
-                      <div class="works_explain">
-                          <p class="works_explain_detail">Vue.jsを使用し、簡易Webアプリケーションを制作。</p>
-                          <p><span class="works_title">担当</span><span class="works_text">Webデザイン/コーディング</span></p>
-                          <p><span class="works_title">使用スキル</span><span class="works_text">Vue.js/gulp.js/HTML5/CSS3(SCSS)</span></p>
-                          <p><span class="works_title">URL</span><span class="works_text"><a href="https://k-inoue24.github.io/sakamichi-songs/" target="_blank">https://k-inoue24.github.io/sakamichi-songs/ <i class="fas fa-external-link-alt"></i></a></span></p>
+                      <div class="worksDetailWrap">
+                          <p>Vue.jsを使用し、簡易Webアプリケーションを制作。</p>
+                          <div class="centerAdjust">
+                            <dl>
+                              <dt class="workTitle">担当</dt>
+                              <dd class="workText">Webデザイン/コーディング</dd>
+                              <dt class="workTitle">使用スキル</dt>
+                              <dd class="workText">Vue.js/gulp.js/HTML5/CSS3(SCSS)</dd>
+                              <dt class="workTitle">リリース日</dt>
+                              <dd class="workText">2019年10月</dd>
+                              <dt class="workTitle">サイトURL</dt>
+                              <dd class="workText"><a href="https://k-inoue24.github.io/sakamichi-songs/" target="_blank">https://k-inoue24.github.io/sakamichi-songs/ <i class="fas fa-external-link-alt"></i></a></dd>
+                            </dl>
+                          </div>
                       </div>
                   </div>
               </div>
@@ -452,29 +504,26 @@
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
           </div>
-          <p class="actual_works" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">※その他実務案件の過去実績は<br>お問い合わせ時に公開いたします。</p>
-      </div>
+          <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back">※その他実務案件の過去実績は<br class="worksTextBr">お問い合わせ時に公開いたします。</p>
     </section>
     <section id="contact">
         <div class="contentInner">
             <h2 class="sectionTitle" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-anchor-placement="bottom-bottom">CONTACT<span>-お問い合わせ-</span></h2>
             <div>
-                <p class="welcome" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-anchor-placement="top-center">いつでもお気軽にご連絡ください。<br>少しだけ気になったからコンタクトしてみたい...<br class="br_sp">など、<br class="br_md">カジュアルなご相談もお待ちしています。</p>
+                <p class="welcome" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-anchor-placement="top-center">いつでもお気軽にご連絡ください。<br>少しだけ気になったからコンタクトしてみたい...<br class="brSp">など、<br class="brMd">カジュアルなご相談もお待ちしています。</p>
                 <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-anchor-placement="top-center">
                     <?php echo apply_filters('the_content', '[contact-form-7 id="14" title="Portfolio_Conact"]'); ?>
                 </div>
-                <p class="reply" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">お問い合わせは<a href="https://twitter.com/KeitaBangkok" target="_blank">TwitterのDM</a>でも受け付けております。<br class="br_md">原則、ご連絡には48時間以内に返答いたします。</p>
+                <p class="reply" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">お問い合わせは<a class="basicLink" href="https://twitter.com/KeitaBangkok" target="_blank">TwitterのDM</a>でも受け付けております。<br class="brMd">原則、ご連絡には48時間以内に返答いたします。</p>
             </div>
         </div>
     </section>
     <section id="links" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
-        <h2 class="sectionTitle">LINKS<span>-外部リンク-</span></h2>
-        <div>
-            <a class="twitter_link" href="https://twitter.com/KeitaBangkok" ontouchstart="" target="_blank">
-            @KeitaBangkok
-        </a>
-            <p>-Twitter Acount-</p>
-        </div>
+      <h2 class="sectionTitle">LINKS<span>-外部リンク-</span></h2>
+      <div>
+        <a class="twitterLink" href="https://twitter.com/KeitaBangkok" target="_blank">@KeitaBangkok</a>
+        <p>-Twitter Acount-</p>
+      </div>
     </section>
     <footer>
         Copyright &copy; Keita Inoue All Rights Reserved.
@@ -484,8 +533,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.bgswitcher.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/smooth-scroll.polyfills.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.tabslet.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.typist.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
     <script>

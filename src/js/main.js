@@ -12,9 +12,15 @@ $(window).on('load', function() {
 });
 
 // スムーススクロール
-var scroll = new SmoothScroll('a[href*="#"]', {
-  header: 'header',
-  speed: 800,
+$(function(){
+  $('a[href^="#"]').click(function(){
+    var speed = 800;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top - $('header').height();
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
 });
 
 // パララックスアニメーション設定
@@ -62,10 +68,21 @@ var mySwiper = new Swiper('.swiper-container', {
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
 })
+// WORKS:スライダー処理：safari対応
+$(function(){
+  $('.swiper-slide:not(".swiper-slide-active")').find('img').hide();
+  $('.swiper-button-next,.swiper-button-prev').on('click',function(){
+    $('.swiper-slide').find('img').hide();
+    $('.swiper-slide-active').find('img').show();
+  })
+})
 
-// WORKS:PC/SP画像切替
-$('.tabs_animate').tabslet({
-    mouseevent: 'click',
-    attribute: 'href',
-    animation: true
-});
+// WORKS:SP版タブ表示
+$('.tabsAnimate .horizontal li').on('click',function(){
+  $(this).siblings('.active').removeClass('active');
+  $(this).addClass('active');
+  var $version = $(this).data('version');
+  console.log($version);
+  $(this).closest('.tabsAnimate').children('div').hide().siblings('.' + $version).fadeIn();
+})
+
